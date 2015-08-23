@@ -2,11 +2,11 @@
 
 A lightweight immutability library.
 
-> Mutatis mutandis is a Medieval Latin phrase meaning ”the necessary changes having been made” or ”once the necessary changes have been made”.
+> Mutatis mutandis is a Medieval Latin phrase meaning ”the necessary changes having been made“ or ”once the necessary changes have been made”.
 
 Like [immutable](https://facebook.github.io/immutable-js/), but compatible with standard JS data structures.
 
-Like [seamless-immutable](https://github.com/rtfeldman/seamless-immutable) but with the nice mutability helpers.
+Like [seamless-immutable](https://github.com/rtfeldman/seamless-immutable), but with the nice mutability helpers.
 
 Like the [React Immutability helpers](https://facebook.github.io/react/docs/update.html), but without the weird MongoDB-inspired syntax.
 

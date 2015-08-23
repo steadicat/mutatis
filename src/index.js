@@ -40,6 +40,10 @@ function getIn(keyPath, defaultValue) {
   return getIn.call(this[keyPath[0]], keyPath.slice(1), defaultValue);
 }
 
+function update(key, defaultValue, mutator) {
+  return updateIn.call(this, key.split('.'), defaultValue, mutator);
+}
+
 function updateIn(keyPath, defaultValue, mutator) {
   if (!mutator) {
     mutator = defaultValue;
