@@ -1,0 +1,39 @@
+{
+  "name": "mutatis",
+  "version": "0.0.1",
+  "description": "A lightweight immutability library compatible with JS built-in collections.",
+  "author": "Stefano J. Attardi (http://github.com/steadicat)",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel/register",
+    "test:watch": "npm test -- --watch"
+  },
+  "homepage": "https://github.com/steadicat/mutatis",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:steadicat/mutatis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steadicat/mutatis/issues"
+  },
+  "keywords": [
+    "react",
+    "immutable",
+    "immutability",
+    "helpers",
+    "freeze",
+    "seamless"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "5.8.21",
+    "babel-runtime": "5.8.20",
+    "expect": "1.9.0",
+    "mocha": "2.2.5"
+  },
+  "license": "MIT"
+}
