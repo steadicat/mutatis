@@ -2,7 +2,7 @@
 
 A lightweight immutability library.
 
-> Mutatis mutandis is a Medieval Latin phrase meaning ”the necessary changes having been made“ or ”once the necessary changes have been made”.
+> Mutatis mutandis is a Medieval Latin phrase meaning “the necessary changes having been made” or “once the necessary changes have been made”.
 
 Like [immutable](https://facebook.github.io/immutable-js/), but compatible with standard JS data structures.
 
