@@ -168,6 +168,14 @@ describe('map()', () => {
   });
 });
 
+describe('reduce()', () => {
+  it('should reduce', () => {
+    const a = mutatis({a: 3, b: 5, c: 1, d: 2});
+    const b = a.reduce((a, b) => a + b, 0);
+    expect(b).toBe(11);
+  });
+});
+
 describe('filter()', () => {
   it('should filter', () => {
     const a = mutatis({a: 3, b: 5, c: 1, d: 2});

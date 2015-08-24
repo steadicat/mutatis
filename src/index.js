@@ -78,7 +78,7 @@ function map(f) {
 function reduce(f, initialValue) {
   warn();
   return immutable(Object.keys(this).reduce((value, key) => {
-    return f(initialValue, this[key], key);
+    return f(value, this[key], key);
   }, initialValue));
 }
 
