@@ -28,10 +28,11 @@
     "freeze",
     "seamless"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "5.8.20",
+  },
   "devDependencies": {
     "babel": "5.8.21",
-    "babel-runtime": "5.8.20",
     "expect": "1.9.0",
     "mocha": "2.2.5"
   },
