@@ -29,12 +29,12 @@
     "seamless"
   ],
   "dependencies": {
-    "babel-runtime": "5.8.20",
+    "babel-runtime": "5.8.29"
   },
   "devDependencies": {
-    "babel": "5.8.21",
-    "expect": "1.9.0",
-    "mocha": "2.2.5"
+    "babel": "5.8.29",
+    "expect": "1.12.2",
+    "mocha": "2.3.3"
   },
   "license": "MIT"
 }
