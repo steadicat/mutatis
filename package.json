@@ -1,6 +1,6 @@
 {
   "name": "mutatis",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A lightweight immutability library compatible with JS built-in collections.",
   "author": "Stefano J. Attardi (http://github.com/steadicat)",
   "main": "lib/index.js",
