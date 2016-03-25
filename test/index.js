@@ -172,8 +172,8 @@ describe('Map#sortBy()', () => {
     const a = mutatis({a: {score: 3}, b: {score: 2}});
     const b = a.sortBy(x => x.score);
     expect(Object.keys(b)).toEqual(['b', 'a']);
-    expect(b.values()[0]).toEqual({score: 2});
-    expect(b.values()[1]).toEqual({score: 3});
+    expect(b.values()[0].score).toEqual(2);
+    expect(b.values()[1].score).toEqual(3);
   });
 });
 

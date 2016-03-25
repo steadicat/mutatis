@@ -3,13 +3,13 @@
   "version": "0.0.5",
   "description": "A lightweight immutability library compatible with JS built-in collections.",
   "author": "Stefano J. Attardi (http://github.com/steadicat)",
-  "main": "lib/index.js",
-  "jsnext:main": "src/index.js",
+  "main": "index.js",
+  "jsnext:main": "index.es2015.js",
   "scripts": {
     "lint": "eslint src",
-    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "build": "./node_modules/.bin/rollup -c -f es6 -o index.es2015.js && ./node_modules/.bin/rollup index.es2015.js -f umd -n Mutatis -o index.js",
     "prepublish": "npm run build",
-    "test": "mocha --compilers js:babel/register",
+    "test": "mocha --require babel-core/register",
     "test:watch": "npm test -- --watch"
   },
   "homepage": "https://github.com/steadicat/mutatis",
@@ -28,13 +28,21 @@
     "freeze",
     "seamless"
   ],
-  "dependencies": {
-    "babel-runtime": "5.8.34"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel": "5.8.34",
-    "expect": "1.13.0",
-    "mocha": "2.3.4"
+    "babel-core": "^6.7.4",
+    "babel-eslint": ">6.0.0-beta",
+    "babel-preset-es2015-rollup": "1.1.x",
+    "babel-preset-stage-0": "6.5.x",
+    "babel-runtime": "6.6.1",
+    "eslint": "2.4.x",
+    "eslint-plugin-babel": "3.1.x",
+    "expect": "1.16.x",
+    "mocha": "2.4.x",
+    "rollup": "0.25.x",
+    "rollup-plugin-babel": "2.4.x",
+    "rollup-plugin-commonjs": "2.2.x",
+    "rollup-plugin-node-resolve": "1.5.x"
   },
   "license": "MIT"
 }
