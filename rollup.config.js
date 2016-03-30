@@ -4,7 +4,6 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   entry: 'src/index.js',
-  moduleName: 'rollup',
   plugins: [
     babel({
       presets: ['es2015-rollup', 'stage-0'],
